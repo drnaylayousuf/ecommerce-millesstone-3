@@ -11,8 +11,8 @@ export default function CartProvider({ children }: { children: ReactNode }) {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-      successUrl="https://ecommerce-millesstone-3.vercel.app/success"
-      cancelUrl="https://ecommerce-millesstone-3.vercel.app/error"
+      successUrl="https://ecommerce-millesstone-3.vercel.app/stripe/success"
+      cancelUrl="https://ecommerce-millesstone-3.vercel.app/stripe/error"
       currency="USD"
       billingAddressCollection={false}
       shouldPersist={true}
